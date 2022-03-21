@@ -1,0 +1,9 @@
+{
+  "generator-teams": {
+    "promptValues": {
+      "developer": "Microsoft"
+    },
+    "libraryName": "messageExtensionFhl",
+    "generator-version": "3.5.0"
+  }
+}

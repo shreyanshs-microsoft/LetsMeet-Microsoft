@@ -1,0 +1,68 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.9/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.9",
+  "id": "2efb4090-a918-11ec-8ad6-e3d7c196d280",
+  "version": "0.0.1",
+  "packageName": "messageextensionfhl",
+  "developer": {
+    "name": "Microsoft",
+    "websiteUrl": "https://00ba-59-95-55-35.ngrok.io",
+    "privacyUrl": "https://00ba-59-95-55-35.ngrok.io/privacy.html",
+    "termsOfUseUrl": "https://00ba-59-95-55-35.ngrok.io/tou.html"
+  },
+  "name": {
+    "short": "MessageExtensionFHL",
+    "full": "MessageExtensionFHL"
+  },
+  "description": {
+    "short": "TODO: add short description here",
+    "full": "TODO: add full description here"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [],
+  "staticTabs": [
+    {
+      "entityId": "f8e869e7-2a2b-429e-b9c8-2d22400bbcbd",
+      "name": "FHL Bot",
+      "contentUrl": "https://00ba-59-95-55-35.ngrok.io/fhlBotTab/?name={loginHint}&tenant={tid}&theme={theme}",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "bots": [],
+  "connectors": [],
+  "composeExtensions": [
+    {
+      "botId": "69caa8f1-d06e-4836-844d-8b595f3fe4d4",
+      "canUpdateConfiguration": true,
+      "commands": [
+        {
+          "id": "letsMeetMessageExtension",
+          "title": "LetsMeet",
+          "description": "Helps you to create meeting from the messages in a conversation",
+          "initialRun": true,
+          "type": "action",
+          "context": [
+            "compose",
+            "commandBox",
+            "message"
+          ],
+          "fetchTask": true
+        }
+      ]
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "00ba-59-95-55-35.ngrok.io"
+  ],
+  "showLoadingIndicator": true
+}
